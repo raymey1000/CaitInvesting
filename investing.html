@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Caitlin Investing App">
-  <link rel="apple-touch-icon" href="icon-192.png">
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caitlin Investing Tips</title>
   <style>
     body {
@@ -29,12 +23,9 @@
       top: 0;
       z-index: 1000;
     }
-    header::before {
-      content: "💰 ";
-    }
-    header::after {
-      content: " 💵";
-    }
+    header::before { content: "💰 "; }
+    header::after { content: " 💵"; }
+
     section {
       margin: 0.5rem 1rem;
       border-radius: 12px;
@@ -60,7 +51,7 @@
     details p, details ul {
       margin-left: 0.5rem;
       margin-top: 0.5rem;
-      line-height: 1.4;
+      line-height: 1.5;
     }
     a {
       color: #228b22;
@@ -69,6 +60,13 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    img.graph {
+      display: block;
+      margin: 1rem auto;
+      max-width: 95%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     footer {
       text-align: center;
@@ -87,9 +85,7 @@
     <section>
       <details>
         <summary>Should I get a high yield saving account?</summary>
-        <p>
-          A high yield checking account is not really that useful. I feel it's mainly a ploy to join the bank.
-        </p>
+        <p>A high yield checking account is not really that useful. I feel it's mainly a ploy to join the bank.</p>
         <p>Getting a brokerage account is much more advantageous, a brokerage:</p>
         <ul>
           <li>has money market funds with higher yield than bank accounts but can be accessed the same</li>
@@ -97,56 +93,62 @@
           <li>has Roth IRA accounts with tax-free investing for tuition, first home and retirement</li>
           <li>has access to bonds and bond funds which may be useful</li>
         </ul>
-        <p>
-          You'd want the money in your checking account to stay roughly stable while the amount in the brokerage account grows over your life.  
-          Example: 2% in checking/CDs (expenses + emergency fund), 9% in house, 89% in brokerage.
-        </p>
+        <p>You'd want the money in your checking account to stay roughly stable while the amount in the brokerage account grows over your life. Example: 2% in checking/CDs, 9% in house, 89% in brokerage.</p>
       </details>
     </section>
 
     <section>
       <details>
         <summary>Which Brokerage should I use?</summary>
-        <p>
-          Though your mum and I are with Fidelity the best brokerage is 
-          <a href="https://investor.vanguard.com/" target="_blank">Vanguard</a>,  
-          as they are less likely to trick you into high expense products and are setup so profits go back to account holders.  
-          You can open an <a href="https://move-money.web.vanguard.com/registration-check" target="_blank">account here</a>.
-        </p>
+        <p>Though your mum and I are with Fidelity the best brokerage is 
+        <a href="https://investor.vanguard.com/" target="_blank">Vanguard</a>, as they are less likely to trick you into high expense products and they are setup so profits go back to account holders.  
+        You can open an <a href="https://move-money.web.vanguard.com/registration-check" target="_blank">account here</a>.</p>
       </details>
     </section>
 
     <section>
       <details>
         <summary>If I open a brokerage account what should I invest in?</summary>
-        <p>
-          I'd say open a brokerage account, move a part of your savings over and invest in money market funds first.  
-          Vanguard offers a <a href="https://investor.vanguard.com/investment-products/money-markets" target="_blank">range of options</a>, even the safe federal one is ~4% right now.
-        </p>
-        <p>
-          Allocation rule of thumb: the longer the goal and the more risk you can take, the more you put in stocks.  
-          For shorter term goals like house deposit or tuition, keep more in money markets.
-        </p>
-        <p>
-          For stocks a very common fund is 
-          <a href="https://investor.vanguard.com/investment-products/mutual-funds/profile/vtsax" target="_blank">VTSAX</a>,  
-          which is diversified across all US stocks, has very low expense ratio, and a great return.
-        </p>
-        <p>Another great option is Roth IRA investing.</p>
+        <p>I'd say open a brokerage account and move a part of your savings over and invest in money market funds first.  
+        Vanguard offers a <a href="https://investor.vanguard.com/investment-products/money-markets" target="_blank">range of options</a>, even the safe federal one is ~4% right now.</p>
+        <p>Rule of thumb: the longer the goal and the more risk you can take, the more you put in stocks. For shorter-term goals like a house deposit or tuition, keep more in money markets.</p>
+        <p>For stocks a very common fund is 
+        <a href="https://investor.vanguard.com/investment-products/mutual-funds/profile/vtsax" target="_blank">VTSAX</a>, diversified across all US stocks, with very low expense ratio and strong returns.</p>
+        <p>Another option is Roth IRA investing.</p>
       </details>
     </section>
 
     <section>
       <details>
         <summary>How should I use a Roth IRA?</summary>
-        <p>
-          A Roth IRA means you don't pay taxes on your gains. Best used for investments with long-term growth (like VTSAX held 10+ years).  
-          They can be used for tuition, first home purchase, and retirement (after age 59½).
-        </p>
-        <p>
-          Your mum and I will match what you put into a Roth IRA each year.  
-          The 2025 limit is $7,000. So if you invest $3,500, we’ll contribute $3,500 to meet the limit.
-        </p>
+        <p>A Roth IRA means you don't pay taxes on your gains. Best used for investments with long-term growth (like VTSAX held 10+ years). They can be used for tuition, first home purchase, and retirement (after age 59½).</p>
+        <p>Your mum and I will match what you put into a Roth IRA each year. The 2025 limit is $7,000. If you invest $3,500, we’ll add $3,500 to meet the limit.</p>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary>What about Bitcoin or Nvidia stock?</summary>
+        <p>Cryptocurrency is very high risk and hard to understand. Individual stocks can have high gains but, like crypto, can go to zero. When you buy the total stock market (or S&P 500) they will never go to zero, and even during the Great Depression the market recovered.</p>
+        <p>There are two types of investor: passive vs active. Passive investing uses buy-and-hold, while active investors trade frequently. Passive investing is super easy, takes little time, and often has huge gains over time.  
+        In fact, <a href="https://www.nerdwallet.com/article/investing/active-vs-passive-investing" target="_blank">passive investing often outperforms active investing</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary>What returns would I expect?</summary>
+        <p>So let’s say you invest as follows:</p>
+        <ul>
+          <li>Account starts with $5000</li>
+          <li>Each year an extra $4000 is added</li>
+          <li>$1000 per month is added</li>
+          <li>$300 goes into money market at 4%</li>
+          <li>$700 goes into VTSAX</li>
+        </ul>
+        <p>After 20 years this could return about <b>$840K</b>.</p>
+        <img src="returnGraph.png" alt="Investment Growth Graph" class="graph">
+        <p>Even though the money market has a nice return, the compounding of VTSAX really drives the long-term growth.</p>
       </details>
     </section>
   </main>
